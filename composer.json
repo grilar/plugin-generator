@@ -1,0 +1,22 @@
+{
+    "name": "grilar/plugin-generator",
+    "description": "Plugin generator",
+    "type": "package",
+	"license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Grilar\\PluginGenerator\\": "src"
+        }
+    },
+    "require": {
+        "grilar/platform": "*@dev",
+        "grilar/plugin-management": "*@dev"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Grilar\\PluginGenerator\\Providers\\PluginGeneratorServiceProvider"
+            ]
+        }
+    }
+}
